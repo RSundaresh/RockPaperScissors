@@ -31,7 +31,7 @@ Actions:
   DeployToAmazonECS_2d:
     Identifier: aws/ecs-deploy@v1.0.5 # Defines the action's properties.
     Configuration:
-      task-definition: https://us-west-2.console.aws.amazon.com/ecs/v2/task-definitions/my-task-family?status=ACTIVE&region=us-west-2
+      task-definition: developmentmysfitscjzfwBackEndecsTaskDefE6F2CFC0
       service: TestECS
       cluster: ECSDevCluster
       region: us-west-2
