@@ -12,7 +12,7 @@
   "requiresCompatibilities": [
     "FARGATE"
   ],
-  // other task definition properties...
+  
 }
   ]
 }
