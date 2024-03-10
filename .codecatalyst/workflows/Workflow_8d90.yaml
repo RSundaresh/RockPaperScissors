@@ -67,7 +67,7 @@ Actions:
     Compute:
       Type: EC2
     Configuration:
-      RepositoryName: RPS_docker
+      RepositoryName: rps-docker
       PublicRepository: true
       ImageScanningConfiguration: true
     DependsOn:
