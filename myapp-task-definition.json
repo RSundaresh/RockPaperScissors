@@ -1,16 +1,16 @@
 {
   "family": "my-task-family",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "networkMode": "awsvpc",
+  "cpu": "256",
+  "memory": "512",
   "containerDefinitions": [
     {
       "name": "myapp",
       "image": "myapp:latest",
-      "cpu": 256,
-      "memory": 512,
       "essential": true
     }
-  ],
-  "requiresCompatibilities": [
-    "FARGATE"
-  ],
-  "networkMode": "awsvpc"
+  ]
 }
