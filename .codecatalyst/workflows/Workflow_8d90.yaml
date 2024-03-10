@@ -31,7 +31,7 @@ Actions:
   DeployToAmazonECS_2d:
     Identifier: aws/ecs-deploy@v1.0.5 # Defines the action's properties.
     Configuration:
-      task-definition: /myapp-task-definition.json
+      task-definition: myapp-task-definition.json
       service: development-mysfitscjzfwBackEnd-fargateServiceCBEE2F3B-yLSd08TD6VYz
       cluster: development-mysfitscjzfwBackEnd-EcsCluster97242B84-5bryuIGr99JF
       region: us-west-2
