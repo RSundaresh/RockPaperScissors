@@ -1,0 +1,16 @@
+Name: Workflow_8d90
+SchemaVersion: "1.0"
+
+Triggers:
+  - Type: PUSH
+    Branches:
+      - main
+Actions:
+  Build:
+    Identifier: aws/build@v1
+    Inputs:
+      Sources:
+        - WorkflowSource
+    Configuration:     
+      Steps:
+        - Run: docker build -t RPScontainer:latest .
