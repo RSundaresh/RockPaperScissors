@@ -30,4 +30,4 @@ Actions:
     Configuration:
       # Required - Steps are sequential instructions that run shell commands
       Steps:
-        - Run: docker build -t myapp:latest
+        - Run: docker build -t myapp:latest .
