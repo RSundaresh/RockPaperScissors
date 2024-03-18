@@ -72,3 +72,28 @@ Actions:
       ImageScanningConfiguration: true
     DependsOn:
       - Build_f9
+  TerraformCommunityEdition_9d:
+    # Identifies the action. Do not modify this value.
+    Identifier: codecatalyst-labs/provision-with-terraform-community@v1.0.1
+    Environment:
+      Connections:
+        - Role: CodeCatalystWorkflowDevelopmentRole-Beta-space
+          Name: "409132426496"
+      Name: Production
+    # Specifies the source and/or artifacts to pass to the action as input.
+    Inputs:
+      # Optional
+      Sources:
+        - WorkflowSource # This specifies that the action requires this Workflow as a source
+    Compute:
+      Type: EC2
+    # Defines the action's properties.
+    Configuration:
+      TerraformOperationMode: apply
+      TerraformVersion: 1.7.3
+      AWSRegion: us-west-2
+      StateBucket: gkebucket
+      StateKey: GKEstatefile.state
+      StateTable: gketable
+    DependsOn:
+      - PushToAmazonECR_25
